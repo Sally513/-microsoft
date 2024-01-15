@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/microsoft-1.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- 瀏覽列nav >右nav-logo>菜單右menu menu-r>菜單左menu menu-l>>漢堡條nav-ham -->
+    <nav class="container-normal">
+        <div class="logo">
+            <img src="./all-img/img/logo.png" alt="logo" width="140px">
+        </div>
+        <ul class="menu pc-menu">
+            <li><a href=""><span> Microsoft 365 </span></a></li>
+            <li><a href=""><span> Teams </span></a></li>
+            <li><a href=""><span> Windows </span></a></li>
+            <li><a href=""><span> Xbox </span></a></li>
+            <li><a href=""><span> 支援 </span></a></li>
+        </ul><!-- 漢堡條 開關-->
+        <ul class="menu func-menu">
+            <li class="ham container-normal">
+                <input type="checkbox" id="ham-switch" hidden>
+                <label for="ham-switch" class="ham-menu" tabindex="1">
+                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                    <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+                </label>
+
+                <ul class="mob-menu">
+                    <li tabindex="1"> Microsoft 365</li>
+                    <li tabindex="1"> Teams </li>
+                    <li tabindex="1"> Windows </li>
+                    <li tabindex="1"> Surface </li>
+                    <li tabindex="1"> Xbox </li>
+                    <li tabindex="1"> 支援 </li>
+
+                    <input type="checkbox" id="chevron1" class="chevron-switch" hidden>
+                    <label for="chevron1" class="chevron-label">
+                        <li tabindex="1">
+                            <span>軟體</span>
+                            <i class="fa-solid fa-chevron-up" style="color: #000000;"></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li tabindex="1">Windows 應用程式</li>
+                            <li tabindex="1">AI</li>
+                            <li tabindex="1">OneDrive</li>
+                            <li tabindex="1">Outlook</li>
+                            <li tabindex="1">Skype</li>
+                            <li tabindex="1">OneNote</li>
+                            <li tabindex="1">Microsoft Teams</li>
+                        </ul>
+                    </label>
+
+                    <input type="checkbox" id="chevron2" class="chevron-switch" hidden>
+                    <label for="chevron2" class="chevron-label">
+                        <li tabindex="1">
+                            <span>個人電腦和設備</span>
+                            <i class="fa-solid fa-chevron-up" style="color: #000000;"></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li tabindex="1">選購 Xbox</a></li>
+                            <li tabindex="1">電腦配件</a></li>
+                        </ul>
+                    </label>
+
+                    <input type="checkbox" id="chevron3" class="chevron-switch" hidden>
+                    <label for="chevron3" class="chevron-label">
+                        <li tabindex="1"><span>娛樂</span>
+                            <i class="fa-solid fa-chevron-up" style="color: #000000;"></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li tabindex="1">Xbox Game Pass Ultimate</li>
+                            <li tabindex="1">Xbox Live Gold</li>
+                            <li tabindex="1">Xbox 與遊戲</li>
+                            <li tabindex="1">電腦遊戲</li>
+                            <li tabindex="1">Windows 遊戲</li>
+                        </ul>
+                    </label>
+
+                    <input type="checkbox" id="chevron4" class="chevron-switch" hidden>
+                    <label for="chevron4" class="chevron-label">
+                        <li tabindex="1"><span>商務適用</span>
+                            <i class="fa-solid fa-chevron-up" style="color: #000000;"></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li tabindex="1">Microsoft Cloud</li>
+                            <li tabindex="1">Microsoft 安全性</li>
+                            <li tabindex="1">Azure</li>
+                            <li tabindex="1">Dynamic 365</li>
+                            <li tabindex="1">商務用 Microsoft 365</li>
+                            <li tabindex="1">Microsoft 產業</li>
+                        </ul>
+                    </label>
+
+                    <input type="checkbox" id="chevron5" class="chevron-switch" hidden>
+                    <label for="chevron5" class="chevron-label">
+                        <li tabindex="1">
+                            <span>開發人員與 IT</span>
+                            <i class="fa-solid fa-chevron-up" style="color: #000000;"></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li tabindex="1">開發人員中心</li>
+                            <li tabindex="1">文件</li>
+                            <li tabindex="1">Microsoft Learn</li>
+                            <li tabindex="1">Microsoft 技術社群</li>
+                            <li tabindex="1">Azure Marketplace</li>
+                            <li tabindex="1">AppSource</li>
+                            <li tabindex="1">Visual Studio</li>
+                        </ul>
+                    </label>
+
+                    <input type="checkbox" id="chevron6" class="chevron-switch" hidden>
+                    <label for="chevron6" class="chevron-label">
+                        <li tabindex="1">
+                            <span>其他</span>
+                            <i class="fa-solid fa-chevron-up" style="color: #000000;"></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li tabindex="1">Microsoft Rewards</li>
+                            <li tabindex="1">免費下載與安全性</li>
+                            <li tabindex="1">教育</li>
+                            <li tabindex="1">禮品卡 </li>
+                            <li tabindex="1">Licensing</li>
+                        </ul>
+                    </label>
+
+                    <li tabindex="1">檢視網站地圖</li>
+
+            </li>
+        </ul>
+        <!-- 漢堡條 結束 -->
+        <li><a href="" class="all-microsoft">
+                <span class="microsoft"> 所有 Microsoft </span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </li>
+        <li><a href="" class="search">
+                <span class="hide"> 搜尋 </span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </li>
+        <li><a href="" class="cart">
+                <span class="hide"> 購物車 </span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </li>
+        <li><a href="" class=" login">
+                <span class="hide"> 登入 </span>
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

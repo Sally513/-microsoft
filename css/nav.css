@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+span {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-normal {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+@media (max-width:1083px) {
+    .container-normal {
+        width: 96%;
+    }
+}
+
+@media (max-width:860px) {
+    .container-normal {
+        width: 100%;
+    }
+}
+
+.container-full {
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+    margin: auto;
+}
+
+/* 導覽列 v */
+nav {
+    height: 54px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* 問題:logo沒有被focus */
+@media (max-width:1083px) {
+    .hide {
+        display: none;
+    }
+
+    .all-microsoft,
+    .search,
+    .cart,
+    .login {
+        padding: 0px;
+    }
+}
+
+@media (max-width:860px) {
+    nav .logo {
+        position: absolute;
+        left: 40%;
+        top: 10px;
+    }
+
+    nav img {
+        padding: 15px;
+        margin-top: -10px;
+    }
+}
+
+/*  */
+
+nav .pc-menu {
+    min-width: 375px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul a:hover li {
+    border-bottom: 1px solid black;
+}
+
+li {
+    padding: 10px 10px 2px 10px;
+    text-align: center;
+}
+.ham {
+    display: none;
+}
+
+/* 長按點擊後會出現虛線及碰觸出現底線 */
+.menu li a {
+    display: inline-block;
+    margin-top: -10px;
+    padding: 15px 10px 10px;
+}
+
+.menu li :hover span {
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+
+.menu li a:focus {
+    border: 1px dashed black;
+}
+
+.menu li a:link,
+.menu li a:hover,
+.menu li a:visited {
+    color: black;
+}
+
+@media (max-width:1083px) {
+    li {
+        padding: 10px 2px 2px 2px;
+    }
+
+    .menu li a {
+        display: inline-block;
+        margin-top: -10px;
+        padding: 15px 5px 10px;
+    }
+}
+
+/* 漢堡條 ^ */
+nav .func-menu {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.ham-menu {
+    display: none;
+    width: 44px;
+    height: 100%;
+    background: white;
+
+}
+
+.ham-menu i {
+    transform: translate(0%, 120%);
+}
+
+.mob-menu{
+    display: none;
+}
+
+
+@media (max-width:860px) {
+
+    nav .pc-menu,
+    .func-menu .all-microsoft {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+
+    .ham-menu {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .func-menu .search {
+        position: absolute;
+        left: 60px;
+        top: 15px;
+    }
+
+    .ham-menu:focus {
+        border: 1px dashed black;
+    }
+
+    #ham-switch:checked~.ham-menu i:nth-of-type(1) {
+        display: none;
+    }
+
+    #ham-switch:not(:checked)~.ham-menu i:nth-of-type(2) {
+        display: none;
+    }
+
+    #ham-switch:checked~.mob-menu {
+        display: block;
+    }
+
+    .mob-menu {
+        width: 100vw;
+        display: none;
+        border-bottom: 2px solid black;
+        background-color: white;
+        z-index: 2;
+        position: absolute;
+        top: 54px;
+        left: -5px;
+    }
+
+    .mob-menu li {
+        margin: 0;
+        padding: 20px 20px;
+        border-bottom: 1px solid rgb(198, 198, 198);
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .mob-menu i {
+        float: right;
+        transform: scale(80%);
+    }
+
+    .menu li :hover span {
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .mob-menu li:focus {
+        border: 1px dashed rgb(131, 131, 131);
+    }
+
+    .chevron-label li {
+        padding: 20px 20px;
+    }
+
+    .dropdown-menu li {
+        padding: 20px 40px;
+    }
+
+    .chevron-switch:checked+label .dropdown-menu {
+        display: block;
+    }
+
+    .chevron-switch:checked+label li i:nth-of-type(2) {
+        display: none;
+    }
+
+    .chevron-switch:not(:checked)+label .dropdown-menu,
+    .chevron-switch:not(:checked)+label li i:nth-of-type(1) {
+        display: none;
+    }
+}

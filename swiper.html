@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/microsoft.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- 瀏覽列nav >右nav-logo>菜單右menu menu-r>菜單左menu menu-l>>漢堡條nav-ham -->
+    <!-- 輪播header-swiper-按鈕swiper-btn>文字swiper-text-按鈕text-btn -->
+    <header>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width:1399px)" srcset="./all-img/img/1920x600-1.avif">
+                        <source media="(min-width:1083px)" srcset="./all-img/img/1399x600-1.avif">
+                        <source media="(min-width:859px)" srcset="./all-img/img/01-1_VP3-1083x600.avif"> 
+                        <img src="./all-img/img/01-1_VP2-859x540.avif" alt=""> 
+                    </picture>
+                    <div class="swiper-text">
+                        <h1>Surface Pro 9</h1>
+                        <span>平板電腦的彈性和筆記型電腦的效能 — 全都在一台攜帶超方便的裝置</span>
+                        <br>
+                        <a href=""><button  class="swipe-text-btn"> 深入了解 </button></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width:1399px)" srcset="./all-img/img/1920x600-2.webp">
+                        <source media="(min-width:1083px)" srcset="./all-img/img/1399x600-2.webp">
+                        <source media="(min-width:859px)" srcset="./all-img/img/02-1_VP3-1083x600.avif">
+                        <img src="./all-img/img/02-1_VP2-859x540.avif" alt="">
+                    </picture>
+                    <div class="swiper-text">
+                        <div><h1>Surface Laptop 5</h1></div>
+                        <span>配備細緻的風格和由第 12 代 Intel® Core 支援的多工速度，以及 Windows 11</span>
+                        <br>
+                        <a href=""><button class="swipe-text-btn"> 深入了解 </button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- <section class="slide-box-2">
+            <div class="swiper-slide my-swiper-slide">
+                <picture>
+                    <source media="(min-width:1260px)" srcset="./all-img/img/banner_VP5-1596x600.jpg">
+                    <source media="(min-width:1083px)" srcset="./all-img/img/banner_VP5-1260x600.jpg">
+                    <source media="(min-width:859px)" srcset="./all-img/img/banner-1083x600.avif">
+                    <source media="(min-width:0px)" srcset="./all-img/img/banner-859x540.avif">
+                    <img src="./all-img/img/banner_VP5-1596x600.jpg" alt="">
+                </picture>
+                <div class="banner-text">
+                    <div>
+                        <h1>Xbox Game Pass Ultimate</h1>
+                    </div>
+                    <span>在首發日遊玩新遊戲。再加上在主機和電腦上與朋友一起享受數百款高品質遊戲。</span>
+                    <br>
+                    <a href="">
+                        <button> 立即加入 </button>
+                    </a>
+                </div>
+            </div>
+        </section> -->
+    </header>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+span{
+    font-family: Arial, sans-serif;
+}
+
+.container-normal {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+@media (max-width: 1083px) {
+    .container-normal {
+        width: 98%;
+    }
+}
+
+.container-full {
+    height: 100%;
+    margin: auto;
+    background-color: rgb(246, 246, 246);
+}
+@media (max-width: 859px) {
+    .container-full {
+        width: 99%;
+        margin: auto;
+    }
+}
+
+/* 導覽列 */
+
+/* 輪播套件 */
+
+
+/* main 三選項 */
+.three {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+
+.one {
+    display: flex;
+    text-align: center;
+}
+
+
+.one>a {
+    margin: 0 25px;
+    color: #0e69b6;
+    text-decoration: underline;
+}
+
+.one img {
+    width: 40px;
+    height: 50px;
+}
+
+
+.one span:active {
+    border: 3px dotted#0e69b6;
+    padding: 3px 0;
+    margin: -2px;
+}
+
+.one span:link,
+.one span:hover,
+.one span:visited {
+    color: #0e69b6;
+}
+
+@media (max-width: 1083px) {
+    .three span {
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 859px) {
+    .three {
+        margin-bottom: 30px;
+    }
+  }
+
+/* 4張卡片 */
+.four-cards {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 25px;
+    color: black;
+}
+
+.four-cards h1,
+.four-cards span {
+    color: black;
+    font-family: sans-serif;
+}
+
+.four-cards h4 {
+    color: #0e69b6;
+    margin-bottom: 0;
+    align-items: center;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.card {
+    width: calc(100% / 4);
+}
+
+.card img {
+    width: 100%;
+}
+
+.four-cards .card-3 {
+    background-color: rgb(239, 178, 57);
+    padding: 2px 8px;
+    font-weight: bold;
+}
+
+.card-4 h4 {
+    width: 150px;
+    margin-bottom: 0;
+}
+
+.four-cards h4:hover {
+    text-decoration: underline;
+}
+
+.four-cards h4:active {
+    border: 3px dotted#0e69b6;
+}
+
+.four-cards h4:link,
+.four-cards h4:hover,
+.four-cards h4:visited {
+    color: #0e69b6;
+}
+
+@media (max-width: 1083px) {
+    .four-cards {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .four-cards span {
+        font-size: 16px;
+    }
+
+    .card {
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 50px;
+    }
+
+    .four-cards h1 {
+        font-size: 20px;
+    }
+
+    .four-cards h4 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 859px) {
+    .four-cards {
+        margin-bottom: 0px;
+    }
+  }
+
+
+/* banner */
+.banner {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+/* 4張卡片 (下) */
+.title {
+    margin-top: 0;
+}
+
+/* 社群資料 */
+.info {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+    color: rgb(70, 70, 70);
+}
+
+.fb {
+    margin-bottom: 30px;
+    padding: 6px;
+}
+
+
+.fb i:active {
+    border: 3px dotted#5B9AD0;
+    padding: 5px;
+    margin: -7px;
+}
+
+.fb i:link,
+.fb i:hover,
+.fb i:visited {
+    color: rgb(70, 70, 70);
+}
+
+
+/* 公司資訊 */
+.company {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* 回到頁首 */
+.goTop a {
+    background-color: rgb(208, 208, 208);
+    color:  rgb(56, 56, 56);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* footer */
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.footer-menu .footer-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+}
+
+.footer-menu li {
+    font-size: 11px;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 28px;
+    list-style-type: none;
+}
+
+.footer-menu ul {
+    padding: 0;
+}
+
+.footer-menu li :hover {
+    text-decoration: underline;
+}
+
+.footer-menu li a:focus {
+    border: 1px dashed rgb(76, 76, 76);
+    text-decoration: underline;
+    padding: 2px 2px;
+    margin: -2px;
+}
+
+.footer-menu li a:link,
+.footer-menu li a:hover,
+.footer-menu li a:visited {
+    color: rgb(101, 101, 101);
+}
+
+.footer-nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-n-right {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(101, 101, 101);
+}
+
+.f-n-right i {
+    margin-right: 5px;
+    color: rgb(101, 101, 101);
+}
+
+.footer-nav ul {
+    padding: 0;
+    display: flex;
+}
+
+.footer-nav li {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.footer-nav li a {
+    display: inline-block;
+    margin-top: -10px;
+    padding: 3px;
+}
+
+.footer-nav li :hover {
+    text-decoration: underline;
+}
+
+.footer-nav li a:focus {
+    border: 1px dashed rgb(76, 76, 76);
+    text-decoration: underline;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:hover,
+.footer-nav li a:visited {
+    color: rgb(101, 101, 101);
+}
+
+@media (max-width: 1083px) {
+    .footer-menu {
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 230px;
+        row-gap: 50px;
+    }
+
+    .f-n-right {
+        font-size: 14px;
+    }
+
+    .footer-nav li {
+        font-size: 12px;
+        text-align: center;
+        list-style-type: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .footer-nav-down {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+/* @media (max-width: 615px) {
+    .footer-menu ul {
+      width: 100%;
+    }
+} */
